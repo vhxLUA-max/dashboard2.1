@@ -136,3 +136,29 @@ h2{font-size:clamp(37px,4vw,53px);line-height:1.02;letter-spacing:-.045em;margin
   .footer-inner{flex-wrap:wrap}.footer-inner a{margin-left:0;width:100%}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.feature-card,.nav-download{transition:none}}
+
+.releases-section{padding-top:116px}
+.release-heading{margin-bottom:35px}
+.release-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.release-card{border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,rgba(255,255,255,.043),rgba(255,255,255,.012));padding:23px;min-height:206px;display:flex;flex-direction:column;transition:transform .22s ease,border-color .22s ease,background .22s ease}
+.release-card:hover{transform:translateY(-3px);border-color:rgba(216,255,82,.18);background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.017))}
+.release-card.is-latest{border-color:rgba(216,255,82,.22);box-shadow:inset 0 1px 0 rgba(216,255,82,.05)}
+.release-card-top{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.release-version{font:700 24px/1 "Space Grotesk";letter-spacing:-.035em}
+.release-badges{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.release-badge{font:700 8px/1 "Space Grotesk";letter-spacing:.13em;border-radius:999px;padding:6px 8px;border:1px solid var(--line);color:#8e9887}
+.release-badge.latest{color:#11150c;background:var(--accent);border-color:var(--accent)}
+.release-badge.preview{color:#c6cebd;background:rgba(255,255,255,.035)}
+.release-date{font-size:10px;color:#697265;margin-top:8px}
+.release-card p{font-size:12px;color:var(--muted);line-height:1.6;margin:16px 0 22px;max-width:500px}
+.release-card-bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid rgba(255,255,255,.055)}
+.release-file{font:700 8px/1 "Space Grotesk";letter-spacing:.12em;color:#697265}
+.release-download{font-size:11px;font-weight:700;color:var(--accent);display:inline-flex;align-items:center;gap:8px}
+.release-download span{font-size:15px}
+.release-empty,.release-loading{grid-column:1/-1;border:1px dashed rgba(255,255,255,.11);border-radius:16px;padding:28px;display:flex;align-items:center;gap:14px;color:#7c8577;background:rgba(255,255,255,.012)}
+.release-empty strong,.release-loading strong{display:block;color:#cdd5c6;font:700 14px/1.2 "Space Grotesk"}
+.release-empty span,.release-loading small{display:block;color:#6f786b;font-size:11px;margin-top:5px}
+.loader{width:18px;height:18px;border-radius:50%;border:2px solid rgba(216,255,82,.17);border-top-color:var(--accent);animation:spin .9s linear infinite;flex:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.update-status .update-note{grid-column:2;color:#5f695b!important;font-size:9px!important;margin-top:1px}
+@media (max-width:720px){.release-grid{grid-template-columns:1fr}.release-card{min-height:195px}}
