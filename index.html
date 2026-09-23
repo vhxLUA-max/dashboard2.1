@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a08">
+  <meta name="description" content="Cheezie is a lightweight desktop chess analyzer for Windows.">
+  <title>Cheezie | Chess analysis, simplified.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow"></div>
+  <header class="nav-shell">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Cheezie home">
+        <span class="brand-mark">C</span>
+        <span>CHEEZIE</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#updates">Updates</a>
+        <a href="https://github.com/vhxLUA-max/cheezie-releases/releases" target="_blank" rel="noreferrer">Releases</a>
+      </div>
+      <a class="nav-download" href="https://github.com/vhxLUA-max/cheezie-releases/releases/latest/download/Cheezie.exe">
+        Download
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> WINDOWS CHESS ANALYZER</div>
+        <h1>Analyze your game.<br><em>Play smarter.</em></h1>
+        <p class="hero-text">
+          A lightweight desktop chess analyzer built around fast engine analysis, clear visual feedback, and practical tools.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/vhxLUA-max/cheezie-releases/releases/latest/download/Cheezie.exe" id="downloadButton">
+            <span>Download Cheezie</span>
+            <span class="button-arrow">↗</span>
+          </a>
+          <a class="button button-secondary" href="#features">Explore features</a>
+        </div>
+
+        <div class="release-line">
+          <span class="status-dot"></span>
+          <span id="releaseStatus">Checking latest release…</span>
+          <span class="status-separator">·</span>
+          <span>Windows</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Cheezie analysis preview">
+        <div class="window-card">
+          <div class="window-top">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <div class="window-title">CHEEZIE / ANALYSIS</div>
+            <div class="window-mode">LIVE</div>
+          </div>
+          <div class="analysis-layout">
+            <div class="board-frame">
+              <div class="board" aria-hidden="true">
+                <span>♜</span><span></span><span>♝</span><span></span><span>♚</span><span></span><span>♟</span><span></span>
+                <span></span><span>♟</span><span></span><span></span><span></span><span>♟</span><span>♟</span><span></span>
+                <span></span><span></span><span>♟</span><span></span><span>♙</span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span>♕</span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span>♘</span><span></span><span></span>
+                <span>♙</span><span></span><span>♙</span><span></span><span></span><span>♙</span><span>♙</span><span>♙</span>
+                <span>♖</span><span></span><span>♗</span><span></span><span>♔</span><span></span><span></span><span>♖</span>
+              </div>
+              <div class="board-caption">BEST MOVE <strong>+2.7</strong></div>
+            </div>
+            <div class="engine-panel">
+              <div class="metric">
+                <span class="metric-label">EVALUATION</span>
+                <strong>+2.70</strong>
+              </div>
+              <div class="eval-bar"><span></span></div>
+              <div class="engine-row"><span>Depth</span><strong>24</strong></div>
+              <div class="engine-row"><span>Nodes</span><strong>3.1M</strong></div>
+              <div class="engine-row"><span>Best</span><strong>Qh7+</strong></div>
+              <div class="line-box">
+                <span>1. Qh7+ Kg8</span>
+                <span>2. Qg7#</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip container">
+      <div><span class="strip-key">ONE INSTALL</span><span>Future versions can update automatically.</span></div>
+      <div><span class="strip-key">LIGHTWEIGHT</span><span>Built for practical desktop use, including lower-end hardware.</span></div>
+      <div><span class="strip-key">RELEASED ON GITHUB</span><span>Downloads are served from the Cheezie release repository.</span></div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">WHAT'S INSIDE</div>
+          <h2>Useful analysis without the clutter.</h2>
+        </div>
+        <p>Cheezie keeps the important chess information close to the board so you can focus on the position.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-large">
+          <div class="feature-index">01</div>
+          <div>
+            <h3>Engine Analysis</h3>
+            <p>Control depth, threads, hash, MultiPV, and engine power from the app settings.</p>
+          </div>
+          <div class="feature-art engine-art">
+            <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="mini-score">+2.70</div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-index">02</div>
+          <h3>Move Feedback</h3>
+          <p>Make mistakes, inaccuracies, and strong moves easier to spot with visual feedback.</p>
+          <div class="feedback-chips"><span>BEST</span><span>GOOD</span><span>INACCURACY</span></div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-index">03</div>
+          <h3>Opening Hints</h3>
+          <p>Recognize opening positions and surface useful lines, variations, and ideas.</p>
+          <div class="opening-line">Ruy Lopez <span>›</span></div>
+        </article>
+
+        <article class="feature-card feature-large">
+          <div class="feature-index">04</div>
+          <div>
+            <h3>Endgame Compass</h3>
+            <p>Keep core endgame ideas visible when they matter: opposition, key squares, and the rule of the square.</p>
+          </div>
+          <div class="compass">
+            <div class="compass-ring"></div>
+            <div class="compass-cross"></div>
+            <span>KING</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section update-section container" id="updates">
+      <div class="update-card">
+        <div>
+          <div class="eyebrow">RELEASE SYSTEM</div>
+          <h2>Install once. Keep Cheezie current.</h2>
+          <p>
+            This website always points to the latest published Windows build. Cheezie can use the release metadata to detect newer versions and update itself without making you hunt through release pages.
+          </p>
+        </div>
+        <div class="update-status">
+          <span class="status-ring"></span>
+          <strong id="versionBadge">Latest</strong>
+          <span id="versionDetails">Loading release information…</span>
+          <a href="https://github.com/vhxLUA-max/cheezie-releases/releases" target="_blank" rel="noreferrer">View release history ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section container">
+      <div class="download-card">
+        <div>
+          <div class="eyebrow">READY TO PLAY?</div>
+          <h2>Get Cheezie for Windows.</h2>
+          <p>The download button always targets the latest published Cheezie executable.</p>
+        </div>
+        <div class="download-action">
+          <a class="button button-primary button-wide" href="https://github.com/vhxLUA-max/cheezie-releases/releases/latest/download/Cheezie.exe">
+            Download <span>↗</span>
+          </a>
+          <small>Latest release · Windows executable</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand footer-brand"><span class="brand-mark">C</span><span>CHEEZIE</span></div>
+      <p>Chess analysis, simplified.</p>
+      <a href="https://github.com/vhxLUA-max/cheezie-releases" target="_blank" rel="noreferrer">Release repository ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
