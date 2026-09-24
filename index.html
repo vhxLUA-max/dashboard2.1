@@ -16,7 +16,7 @@
   <header class="nav-shell">
     <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="Cheezie home">
-        <span class="brand-mark">C</span>
+        <span class="brand-mark" aria-hidden="true">C</span>
         <span>CHEEZIE</span>
       </a>
       <div class="nav-links">
@@ -34,13 +34,13 @@
     <section class="hero container">
       <div class="hero-copy">
         <div class="hero-kicker">
-          <span class="pulse"></span>
+          <span class="status-indicator" aria-hidden="true"></span>
           <span>WINDOWS CHESS ANALYZER</span>
           <span class="kicker-line"></span>
           <span class="kicker-soft">BUILT FOR FOCUS</span>
         </div>
 
-        <h1>See the move.<br><em>Understand the position.</em></h1>
+        <h1>Chess analysis, without the noise.</h1>
 
         <p class="hero-text">
           Cheezie puts engine analysis, visual feedback, and practical chess tools into one clean desktop experience.
@@ -49,9 +49,9 @@
         <div class="hero-actions">
           <a class="button button-primary" href="https://github.com/vhxLUA-max/cheezie-releases/releases/latest/download/Cheezie.exe" id="downloadButton">
             <span>Download Cheezie</span>
-            <span class="button-arrow">↗</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
           </a>
-          <a class="button button-secondary" href="#releases">See releases</a>
+          <a class="button button-secondary" href="#releases">See releases <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
         <div class="release-line">
@@ -150,7 +150,7 @@
 
         <article class="feature-card">
           <div class="feature-index">02</div>
-          <div class="feature-icon feedback-icon"><span></span><span></span><span></span></div>
+          <div class="feature-icon feedback-icon" aria-hidden="true"><svg class="feature-svg" viewBox="0 0 24 24"><path d="M5 18V9M12 18V5M19 18v-6"/></svg></div>
           <h3>Move Feedback</h3>
           <p>Make mistakes, inaccuracies, and strong moves easier to spot with visual feedback.</p>
           <div class="feedback-chips"><span>BEST</span><span>GOOD</span><span>INACCURACY</span></div>
@@ -158,7 +158,7 @@
 
         <article class="feature-card">
           <div class="feature-index">03</div>
-          <div class="feature-icon opening-icon"><span>e4</span><span>♞</span></div>
+          <div class="feature-icon opening-icon" aria-hidden="true"><svg class="feature-svg" viewBox="0 0 24 24"><path d="M4 18h16M6 18l1.5-8h9L18 18M8 10l2-4h4l2 4"/></svg></div>
           <h3>Opening Hints</h3>
           <p>Recognize opening positions and surface useful lines, variations, and ideas.</p>
           <div class="opening-line">Ruy Lopez <span>›</span></div>
@@ -213,7 +213,7 @@
 
     <section class="download-section container">
       <div class="download-card">
-        <div class="download-mark">C</div>
+        <div class="download-mark" aria-hidden="true">C</div>
         <div>
           <div class="eyebrow">READY TO PLAY?</div>
           <h2>Start analyzing.</h2>
